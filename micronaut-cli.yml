@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.smart.house
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [ app-name, gradle, http-client, http-client-test, java, java-application, logback, micronaut-aot, micronaut-build, micronaut-http-validation, netty-server, properties, readme, security-annotations, security-oauth2, serialization-jackson, shade, spock, static-resources ]
