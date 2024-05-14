@@ -1,7 +1,5 @@
 plugins {
-    id 'java'
     id 'io.micronaut.application' version '4.3.4'
-//    id 'io.micronaut.aot' version '4.3.4'
 }
 
 version = '0.1'
@@ -9,6 +7,10 @@ group = 'com.smart.house'
 
 repositories {
     mavenCentral()
+}
+
+application {
+    mainClass = 'com.smart.house.Application'
 }
 
 dependencies {
@@ -22,20 +24,13 @@ dependencies {
     implementation 'io.micronaut:micronaut-inject:4.3.13'
 
 
-
 //    annotationProcessor('io.micronaut.security:micronaut-security-annotations')
-    // https://mvnrepository.com/artifact/org.projectlombok/lombok
-
 //    runtimeOnly('ch.qos.logback:logback-classic')
 //    aotPlugins platform('io.micronaut.platform:micronaut-platform:4.3.6')
 //    aotPlugins('io.micronaut.security:micronaut-security-aot')
-
 }
 
 
-application {
-    mainClass.set('com.smart.house.Application')
-}
 java {
     sourceCompatibility = '17'
     targetCompatibility = '17'
@@ -64,6 +59,3 @@ micronaut {
 //        configurationProperties.put('micronaut.security.openid-configuration.enabled', 'false')
 //    }
 }
-
-
-
