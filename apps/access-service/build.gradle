@@ -10,10 +10,11 @@ repositories {
 }
 
 application {
-    mainClass = 'com.smart.house.Application'
+    mainClass = 'com.smart.house.AccessApplication'
 }
 
 dependencies {
+    implementation project (':common')
     compileOnly 'org.projectlombok:lombok:1.18.32'
     compileOnly 'io.projectreactor:reactor-core'
     annotationProcessor 'io.micronaut:micronaut-http-validation'
@@ -40,7 +41,7 @@ java {
 //graalvmNative.toolchainDetection = false
 micronaut {
     runtime('netty')
-    testRuntime('spock2')
+//    testRuntime('spock2')
     processing {
         incremental(true)
         annotations('com.smart.house.*')

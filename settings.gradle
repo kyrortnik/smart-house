@@ -1,2 +1,3 @@
 rootProject.name = 'smart-house'
 include 'apps:access-service'
+include 'common'
