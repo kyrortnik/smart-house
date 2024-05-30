@@ -1,0 +1,17 @@
+
+allprojects {
+
+    version = '0.1'
+    group = 'com.smart.house'
+
+    apply plugin: 'java'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compileOnly 'org.projectlombok:lombok:1.18.32'
+    }
+
+}
